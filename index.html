@@ -5,19 +5,41 @@
     <title>Unsmart</title>
     <link rel="icon" type="image/png" href="Logo_blue_png.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <style>
       html,body {
-        height: 100%;
-        overflow: hidden;
-        background-color: #0C0F66;
+          height: 100%;
+          overflow: hidden;
+          background-color: #0C0F66;
       }
       *{
-        color: #FFFFFF;
+          color: #FFFFFF;
+      }
+      .holder {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+      }
+      .col-md-1 {
+          display: flex;
+          justify-content: center;
+          padding: 10px;
+      }
+      .img {
+          border: 5px solid black;
+          border-radius: 50%;
       }
     </style>
   </head>
   <body>
-    <p>Hi im Unsmart!</p>
+      <div class="holder">
+          <div class="row center-xs">
+              <div class="col-md-1">
+                  <img class="img" src="Logo_blue_png.png" alt="logo"/>
+              </div>
+          </div>
+      </div>
   </body>
 </html>
